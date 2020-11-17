@@ -1,4 +1,3 @@
 FROM nginx
-RUN echo "funciona nginx" > /usr/share/nginx/html/index.html
+COPY /home/pi/prueba-docker /usr/share/nginx/html/index.html
 EXPOSE 80
-EXPOSE 8080
