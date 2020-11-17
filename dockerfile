@@ -1,4 +1,4 @@
 FROM nginx
-COPY /home/pi/prueba-docker/website/ /usr/share/nginx/html
+COMMAND echo "funciona nginx" > /usr/share/nginx/html/index.html
 EXPOSE 80
 EXPOSE 8080
