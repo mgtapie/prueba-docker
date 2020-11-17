@@ -1,4 +1,4 @@
 FROM nginx
-COPY static-html-directory /usr/share/nginx/html
+COPY /home/pi/prueba-docker /usr/share/nginx/html
 EXPOSE 80
 EXPOSE 8080
