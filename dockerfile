@@ -1,4 +1,4 @@
-FROM httpd:2.4
-COPY ./public-html/ /usr/local/apache2/htdocs/
+FROM nginx
+COPY static-html-directory /usr/share/nginx/html
 EXPOSE 80
-ENTRYPOINT ["/usr/sbin/httpd","-D","FOREGROUND"]
+EXPOSE 8080
